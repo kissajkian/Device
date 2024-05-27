@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: kafka:9092
+
+topic:
+  consumer-contractions-events: consumer.contractions.events
+  producer-devices-events: producer.devices-events
+  retry-devices-events: retry.devices.events
+  dlq-devices-events: dlq.devices.events
+
+group:
+  consumer-contractions-events: group-1
+
+endpoint:
+  producer: https://localhost:8080/device
